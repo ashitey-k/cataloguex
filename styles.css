@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+  }
+  header{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #close{
+    display: none;
+  }
+  #hamnuger{
+    display: none;
+  }
+  #nav ul{
+    display: flex;
+  }
+  #nav ul li a{
+    color: black;
+    letter-spacing: 2px;
+    display: block;
+    font-size: 30px;
+    border-radius: 25px;
+    margin: 5px 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  #nav ul li a:hover{
+    background-color: darkslategrey;
+  }
+  @media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+  }
+  @media only screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+    }
+  }
+  @media only screen and (max-width:900px){
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    #close{
+        color: white;
+        cursor: pointer;
+        display: block;
+    }
+    #hamburger .line{
+        background: black;
+        height: 5px;
+        width: 30px;
+        margin: 5px;
+    }
+    #nav{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: black;
+        transition: all ease 0.2s;
+        overflow: hidden;
+    }
+    #nav.active{
+        height: 300px;
+    }
+    #nav ul{
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    #nav.active ul{
+        opacity: 1;
+    }
+    #nav ul li a{
+        margin-bottom: 10px;
+    }
+  }
+  
+#containercard{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-around;
+    background-color: crimson;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.card{
+    transform-style:preserve-3d ;
+    min-height: 90vh;
+    width: 380px;
+    background-color: white;
+    box-shadow: 0 20px 20px black,0px 0px 50px black;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+    position: relative;
+    left: 100%;
+    transition: all 2.4s ease-in;
+}
+:hover .card{
+    left: 0;
+}
+.sneaker img{
+    width: 15rem;
+    z-index: 2;
+}
+.sneaker{
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    text-transform: capitalize;
+}
+.info h1{
+    font-size:30px;
+}
+.info h2{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #58558858;
+    font-weight: lighter;
+}
+.sizes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    gap: 10px;
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color:#111;
+}
+.sizes button:hover{
+    background-color: black;
+    color: white;
+}
+.purchase{
+    margin-top: 5rem;
+}
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: red;
+    border: none;
+    color: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: large;
+}
+i{
+    font-size: x-large;
+}
+#info{
+    height: 50vh;
+    padding: 30px;
+    width: auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#info h1,h4,p{
+    padding-top: 10px;
+}
+#info h1{
+    border-bottom: 3px solid black;
+}
+#subscribe{
+    height: 50vh;
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+#form{
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.fieldname,
+.fieldemail{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    border: 2px solid black;
+}
+.fieldname i,
+.fieldemail i{
+    padding: 10px;
+    cursor: pointer;
+}
+.fieldname input,
+.fieldemail input{
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+}
+div.innactive{
+    opacity: 0;
+    pointer-events: none;
+}
+div.active{
+    opacity: 1;
+    pointer-events: all;;
+}
+#modalopen button{
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Monsterrat',sans-serif;
+    cursor: pointer;
+}
+
+#modalbg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: visibility 0s, opacity 0.5s;
+}
+#modalbg.show{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+#modal{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#modal button{
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Monsterrat',sans-serif;
+    cursor: pointer;
+}
+#modalclose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
