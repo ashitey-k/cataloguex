@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');</style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatalogueX</title>
@@ -18,7 +19,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
-            </div>
+                </div>
             <div id="nav">
                 <button id="close"><i class='bx bx-x'></i></button>
                 <ul>
@@ -37,6 +38,11 @@
                 </ul>
             </div>
         </header>
+        <section id="info">
+            <h1>CATALOUGEX</h1>
+            <h4>our story</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat totam excepturi alias aliquam magnam natus nisi nihil distinctio perferendis quibusdam minus dolorem atque est, assumenda praesentium ducimus quod magni tempore!</p>
+        </section>
         <section id="containercard">
             <div class="card">
                 <div class="sneaker">
@@ -47,9 +53,11 @@
                     <h1 class="title">off-white X nike paintjob</h1>
                     <h3></h3>
                     <div class="sizes">
-                        <button>white</button>
-                        <button>black</button>
-                        <button class="">virgil</button>
+                        <ul>
+                            <li><button>white</button></li>
+                            <li><button>black</button></li>
+                            <li><button class="">signed</button></li>
+                        </ul>
                     </div>
                     <div class="purchase">
                         <button>purchase<i class='bx bx-cart-alt bx-tada' ></i></button>
@@ -66,9 +74,11 @@
                     <h1 class="title1">off-white X fear of god t-shirt</h1>
                     <h3></h3>
                     <div class="sizes">
-                        <button>white</button>
-                        <button>black</button>
-                        <button class="">virgil</button>
+                        <ul>
+                            <li><button>white</button></li>
+                            <li><button>black</button></li>
+                            <li><button class="">signed</button></li>
+                        </ul>
                     </div>
                     <div class="purchase">
                         <button>purchase<i class='bx bx-cart-alt bx-tada' ></i></button>
@@ -84,20 +94,17 @@
                     <h1 class="title2">off-white nike sb dunk low</h1>
                     <h3></h3>
                     <div class="sizes">
-                        <button>white</button>
-                        <button>black</button>
-                        <button class="">virgil</button>
+                        <ul>
+                            <li><button>white</button></li>
+                            <li><button>black</button></li>
+                            <li><button class="">signed</button></li>
+                        </ul>
                     </div>
                     <div class="purchase">
                         <button>purchase<i class='bx bx-cart-alt bx-tada' ></i></button>
                     </div>
                  </div>
             </div>
-        </section>
-        <section id="info">
-            <h1>CATALOUGEX</h1>
-            <h4>our story</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat totam excepturi alias aliquam magnam natus nisi nihil distinctio perferendis quibusdam minus dolorem atque est, assumenda praesentium ducimus quod magni tempore!</p>
         </section>
         <section id="subscribe">
             <h1>please sign up to our newsletter for exclusive information</h1>
@@ -106,7 +113,7 @@
             </div>
             <div id="modalbg">
                 <div id="modal">
-                    <span id="modalclose">x</span>
+                    <span id="modalclose"><i class='bx bx-x'></i></span>
                     <form id="form"> 
                         <div class="fieldname">
                             <i class='bx bx-user'></i>
@@ -118,12 +125,20 @@
                             <input type="email" placeholder="Email" required>
                             <i class='bx bxs-chevron-down'></i>
                         </div>
+
                     </form>
                 </div>
             </div>
         </section>
         <section id="socials">
-            
+            <h1>follow us on social media</h1>
+            <div class="icons">
+                <ul>
+                    <li class="gicon"><i class='bx bxl-instagram'></i></li>
+                    <li class="ticon"><i class='bx bxl-twitter' ></i></li>
+                    <li class="sicon"><i class='bx bxl-snapchat' ></i></li>
+                </ul>
+            </div>
         </section>
     </div>
     <script src="app.js"></script>
