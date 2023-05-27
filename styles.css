@@ -71,12 +71,12 @@
         left: 0;
         right: 0;
         width: 100vw;
-        background-color: black;
+        background-color: white;
         transition: all ease 0.2s;
         overflow: hidden;
     }
     #nav.active{
-        height: 300px;
+        height: 350px;
     }
     #nav ul{
         display: block;
@@ -107,7 +107,7 @@
 .card{
     transform-style:preserve-3d ;
     min-height: 90vh;
-    width: 380px;
+    width: 320px;
     background-color: white;
     box-shadow: 0 20px 20px black,0px 0px 50px black;
     border-radius: 30px;
@@ -143,11 +143,9 @@
     color: #58558858;
     font-weight: lighter;
 }
-.sizes{
-    display: flex;
-    justify-content: space-around;
+.sizes li{
     padding-top: 20px;
-    gap: 10px;
+    justify-content: space-between;
 }
 .sizes button{
     padding: 0.5rem 2rem;
@@ -296,4 +294,90 @@ div.active{
     right: 10px;
     font-weight: bold;
     cursor: pointer;
+}
+#socials{
+    height: 70vh;
+    width: auto;
+    background-color: #111;
+    color: white;
+}
+.icons{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.icons ul li{
+    padding: 10px;
+}
+.gicon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+.ticon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+.sicon{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+.ticon:hover{
+    outline-offset: 4px;
+    background-color: skyblue;
+}
+.gicon:hover{
+    outline-offset: 4px;
+    background-color: coral;
+}
+.sicon:hover{
+    outline-offset: 4px;
+    background-color: yellow;
+}
+.ticon i{
+    margin: auto;
+}
+.gicon i{
+    margin: auto;
+}
+.sicon i{
+    margin: auto;
+}
+.ticon:hover i{
+    animation: shake 0.25s;
+}
+.gicon:hover i{
+    animation: shake 0.25s;
+}
+.sicon:hover i{
+    animation: shake 0.25s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    0%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
 }
