@@ -76,7 +76,7 @@
         overflow: hidden;
     }
     #nav.active{
-        height: 350px;
+        height: 450px;
     }
     #nav ul{
         display: block;
@@ -178,7 +178,7 @@ i{
     font-size: x-large;
 }
 #info{
-    height: 50vh;
+    height: 90vh;
     padding: 30px;
     width: auto;
     text-align: center;
