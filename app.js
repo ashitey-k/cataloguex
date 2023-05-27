@@ -24,7 +24,7 @@ function animatedForm(){
 
 
 
-            if(input.type === "text" && validateUser(input)){
+            if(input.type === "text"){
                 nextSlide(parent,nextForm)
             }else if(input.type === 'email' && validateEmail(input)){
                 nextSlide(parent,nextForm)
